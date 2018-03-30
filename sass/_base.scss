@@ -13,12 +13,20 @@ $color-grey-dark-1: #333;
 $color-grey-dark-2: #777;
 $color-grey-dark-3: #999;
 
+$dark-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 
 :root {
     --color-primary: #eb2f64;
     --color-primary-light: #FF3366;
     --color-primary-dark: #BA265D;
 }
+
+/* MIXINS */
+
+@mixin shadow-dark {
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
 
 * {
     margin: 0;

@@ -1,0 +1,32 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: $color-grey-light-2;
+    box-shadow: $dark-shadow;
+
+    // @include shadow-dark; //mixin
+
+    min-height: 200px;
+}
+
+.header {
+    height: 7rem;
+    background-color: #fff;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: $color-grey-dark-1;
+
+    flex: 0 0 18%;  //grow shrink flex-basis
+}
+
+.hotel {
+    background-color: #fff;
+    background-color: orangered;
+
+    flex: 1;   
+}
