@@ -5,8 +5,6 @@
     box-shadow: $dark-shadow;
 
     // @include shadow-dark; //mixin
-
-    min-height: 400px;
 }
 
 .header {
@@ -27,11 +25,18 @@
     background-color: $color-grey-dark-1;
 
     flex: 0 0 18%;  //grow shrink flex-basis
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.hotel {
+.hotel-view {
     background-color: #fff;
+
+    /// TEST
     background-color: orangered;
+    height: 80rem;
 
     flex: 1;   
 }
