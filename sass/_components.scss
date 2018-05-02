@@ -274,3 +274,75 @@
         box-shadow: none;
     }
 }
+
+
+/////////////////////////////
+//// PARAGRAPH
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+/////////////////////////////
+//// LIST
+.list {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-top: $line;
+    border-bottom: $line;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: 0.7rem;
+    }
+
+    &__item::before {
+        content:"";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        margin-right: 0.7rem;
+
+        // // older browsers
+        // background-image: url(../img/chevron-thin-right.svg);
+        // background-size: cover;
+
+        // newer browsers
+        background-color: $color-primary;
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+    }
+}
+
+/////////////////////////////
+//// RECOMMEND
+.recommend {
+    font-size: 1.3rem;
+    color: $color-grey-dark-3;
+
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+
+    &__count {
+        margin-right: auto;
+    }
+
+    &__friends {
+
+    }
+
+    &__photo {
+        box-sizing: content-box;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+
+        &:not(:last-child) {
+            margin-right: -1.5rem;
+        }
+    }
+}
