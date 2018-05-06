@@ -41,6 +41,7 @@
     display: flex;
     padding: 4.5rem;
     background-color: $color-grey-light-1;
+    font-size: 1.4rem;
 }
 
 .description {
@@ -49,14 +50,13 @@
     padding: 3rem;
     box-shadow: $light-shadow;
     border-bottom: $line;
-    font-size: 1.4rem;
 
 }
 
 .user-reviews {
     flex: 1;
 
-    //test
-    border: 2px solid red;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
