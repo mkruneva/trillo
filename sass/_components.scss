@@ -12,6 +12,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: $color-grey-light-2;
+    }
+
     &__input {
         font-family: inherit;
         font-size: inherit;
@@ -23,10 +30,19 @@
         width: 90%;
         transition: all .2s;
         margin-right: -3rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 82%;
+        }
+
         &:focus {
             outline: none;
             width: 100%;
             background-color: $color-grey-light-3;
+
+            @media only screen and (max-width: $bp-smallest) {
+                width: 95%;
+            }
         }
         &::-webkit-input-placeholder {
             font-weight: 100;
@@ -85,6 +101,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: $bp-smallest) {
+            top: .4rem;
+        }
     }
     &__user {}
     &__user-photo {
@@ -228,6 +248,11 @@
             font-size: 1.8rem;
             padding: 1.25rem 2rem;
         }
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 1.5rem;
+            padding: 1.25rem 1.5rem;
+        }
     }
 
     &__stars {
@@ -240,6 +265,14 @@
         width: 1.75rem;
         height: 1.75rem;
         fill: $color-primary;
+    }
+
+    &__icon-location {
+        @media only screen and (max-width: $bp-smallest) {
+            width: 3.25rem;
+            height: 3.25rem;
+            margin-left: 1.5rem;
+        }
     }
 
     &__location {
@@ -355,12 +388,20 @@
     border-top: $line;
     border-bottom: $line;
 
+    @media only screen and (max-width: $bp-smallest) {
+        margin: 0;
+    }
+
     display: flex;
     flex-wrap: wrap;
 
     &__item {
         flex: 0 0 50%;
         margin-bottom: 0.7rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            flex: 0 0 100%;
+        }
     }
 
     &__item::before {
